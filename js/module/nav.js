@@ -13,7 +13,6 @@ export const initNav = () => {
     menuButton.addEventListener('click', e => {
         menuButton.classList.toggle('active');
         menu.classList.toggle('is-active');
-        // body.classList.toggle('lock');
         console.log('клик')
     });
 

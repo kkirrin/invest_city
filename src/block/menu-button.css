@@ -11,6 +11,7 @@
     cursor: pointer;
     -webkit-appearence: none;
     -webkit-tap-highlight-color: transparent;
+    z-index: 1000;
 
 }
 .btn__menu svg {
@@ -130,4 +131,17 @@
 }
 .btn__menu--mobile.active svg path:nth-child(3) {
     --offset: 58px;
+}
+
+
+.button_main {
+    background: rgba(148, 118, 91, 1);
+    color: white;
+    max-width: 430px;
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+    padding: 15px 97px;
+    text-transform: uppercase;
+    font-weight: 500;
 }

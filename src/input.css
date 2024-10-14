@@ -140,6 +140,8 @@
     background-image: url('../src/img/img/bg-main-b.png');
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
+
 }
 
 
@@ -154,6 +156,8 @@ header {
         background-image: url('../src/img/img/bg-main-m.png');
         background-repeat: no-repeat;
         background-position: center;
+        background-size: cover;
+
     }
 }
 
@@ -162,5 +166,7 @@ header {
         background-image: url('../src/img/img/bg-main-s.png');
         background-repeat: no-repeat;
         background-position: center;
+        background-size: cover;
     }
 }
+
