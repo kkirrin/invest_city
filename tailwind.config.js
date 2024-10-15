@@ -32,7 +32,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        'fontNokia': ['NokiaKokia', 'regular'],
+        'Bahnschrift': ['Bahnschrift', 'regular'],
       }
     }
   },

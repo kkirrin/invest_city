@@ -1,0 +1,50 @@
+.circle__wrapper button {
+    font-size: clamp(0.75rem, 0.75vw + 0.6rem, 1.5rem);
+    font-weight: 700;
+    font-family: 'Bahnschrift';
+    text-transform: uppercase;
+    border-radius: 100%;
+    background-color: var(--brown-light);
+    color: var(--white);
+    width: 200px;
+    height: 200px;
+    transition: all 0.4s ease-in-out;
+}
+
+.circle__wrapper button:hover {
+    background-color: var(--biege);
+    color: var(--brown-light);
+}
+
+.circle__wrapper button:active {
+    background-color: var(--biege-dark);
+    color: var(--white);
+}
+
+
+.button_main {
+    background: rgba(148, 118, 91, 1);
+    color: white;
+    max-width: 430px;
+    width: 100%;
+    text-align: center;
+    border-radius: 30px;
+    padding: 15px 97px;
+    text-transform: uppercase;
+    font-weight: 500;
+        transition: all 0.4s ease-in-out;
+
+}
+
+
+.button_main:hover {
+    background-color: var(--biege);
+    color: var(--brown-light);
+
+}
+
+
+.button_main:active {
+    background-color: var(--biege-dark);
+    color: var(--white);
+}

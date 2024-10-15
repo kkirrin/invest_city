@@ -7,8 +7,10 @@
 @import './block/menu.css';
 @import './block/scrool-top.css';
 @import './block/popup.css';
-/* @import './block/form'; */
+@import './block/main-section.css';
 @import './block/animateSocialsBtn.css';
+@import './block/button.css';
+@import './block/info-section.css';
 
 /* Импорт TailWind */
 @tailwind base;
@@ -39,17 +41,16 @@
     font-display: swap;
 }
 
+
 :root {
-    --black: #393D46,
-    --white: #fff,
-    --brown-light: #94765B,
-    --brown-dark: #816F67,
-    --biege: #D7CDC9,
-    --biege-dark: #9E918C,
-    --bg: #E8E4E2,
-
+  --black: #393D46;
+    --white: #fff;
+    --brown-light: #94765B;
+    --brown-dark: #816F67;
+    --biege: #D7CDC9;
+    --biege-dark: #9E918C;
+    --bg: #E8E4E2;
 }
-
 
 @layer base {
     html {
@@ -62,7 +63,7 @@
     body {
         font-family: 'TT Norms', sans-serif;
         color: #262626;
-        background: linear-gradient(166deg, #FFF 5.27%, rgba(255, 255, 255, 0.00) 78.75%);
+        background: var(--bg);
         font-weight: 400;
     }
 
@@ -144,6 +145,10 @@
 
 }
 
+#map_img {
+    margin-top: 60px;
+}
+
 
 
 header {
@@ -169,4 +174,7 @@ header {
         background-size: cover;
     }
 }
+
+
+
 
