@@ -43,7 +43,7 @@
 
 
 :root {
-  --black: #393D46;
+    --black: #393D46;
     --white: #fff;
     --brown-light: #94765B;
     --brown-dark: #816F67;
@@ -56,7 +56,7 @@
     html {
         scroll-behavior: smooth;
         scrollbar-width: thin;
-        scrollbar-color: var(--816F67) var(--E8E4E2);
+        scrollbar-color: var(--brown-light) var(--biege);
         font-family: 'Involve';
     }
 
@@ -110,6 +110,25 @@
     background-position: right;
 }
 
+.pattern_1 {
+    position: absolute;
+    top: -50px;
+    right: -250px;
+    z-index: 1;
+}
+
+.pattern_2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.main__svg {
+    width: 100%;
+    height: auto;
+}
+
 @media (max-width: 767px) {
     .important {
         background-image: none;
@@ -140,9 +159,27 @@
 #main-section {
     background-image: url('../src/img/img/bg-main-b.png');
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-attachment: fixed;
+    background-size: cover; 
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: top center;
 
+}
+
+#map_img {
+    height: 100vh;
+    width: -webkit-fill-available;
+}
+
+#map_img {
+    background-image: url('../src/img/img/map.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-position: top center;
 }
 
 #map_img {
@@ -154,24 +191,33 @@
 header {
     position: fixed;
     width: -webkit-fill-available;
+    z-index: 2;
 }
 
 @media screen and (max-width: 769px) {
     #main-section {
-        background-image: url('../src/img/img/bg-main-m.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-
+        background-image: url('../src/img/img/bg-main-m.png');    
+    }
+    
+    #map_img {
+        background-image: url('../src/img/img/map-m.png');
     }
 }
 
 @media screen and (max-width: 480px) {
     #main-section {
         background-image: url('../src/img/img/bg-main-s.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+    }
+    
+    #map_img {
+        background-image: url('../src/img/img/map-s.png');
+       
+    }
+    .pattern_1 {
+        position: absolute;
+        top: -50px;
+        right: -0px;
+        z-index: 1;
     }
 }
 

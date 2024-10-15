@@ -1099,7 +1099,7 @@ video {
 html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: var(--816F67) var(--E8E4E2);
+  scrollbar-color: var(--brown-light) var(--biege);
   font-family: 'Involve';
 }
 
@@ -1251,6 +1251,14 @@ h2, h3 {
   max-width:  1440px;
 }
 
+.relative{
+  position:  relative;
+}
+
+.z-\[2\]{
+  z-index:  2;
+}
+
 .order-1{
   order:  1;
 }
@@ -1278,10 +1286,6 @@ h2, h3 {
 
 .mt-\[30px\]{
   margin-top:  30px;
-}
-
-.block{
-  display:  block;
 }
 
 .flex{
@@ -1623,6 +1627,25 @@ h2, h3 {
   background-position: right;
 }
 
+.pattern_1 {
+  position: absolute;
+  top: -50px;
+  right: -250px;
+  z-index: 1;
+}
+
+.pattern_2 {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1;
+}
+
+.main__svg {
+  width: 100%;
+  height: auto;
+}
+
 @media (max-width: 767px) {
   .important {
     background-image: none;
@@ -1649,46 +1672,60 @@ h2, h3 {
   height: 100vh;
   background-image: url('../src/img/img/bg-main-b.png');
   background-repeat: no-repeat;
-  background-position: center;
+  background-attachment: fixed;
   background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-position: top center;
 }
 
 #map_img {
+  height: 100vh;
+  width: -webkit-fill-available;
+  background-image: url('../src/img/img/map.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-position: top center;
   margin-top: 60px;
 }
 
 header {
   position: fixed;
   width: -webkit-fill-available;
+  z-index: 2;
 }
 
 @media screen and (max-width: 769px) {
   #main-section {
     background-image: url('../src/img/img/bg-main-m.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  }
+
+  #map_img {
+    background-image: url('../src/img/img/map-m.png');
   }
 }
 
 @media screen and (max-width: 480px) {
   #main-section {
     background-image: url('../src/img/img/bg-main-s.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  }
+
+  #map_img {
+    background-image: url('../src/img/img/map-s.png');
+  }
+
+  .pattern_1 {
+    position: absolute;
+    top: -50px;
+    right: -0px;
+    z-index: 1;
   }
 }
 
 @media (min-width: 768px){
-  .sm\:block{
-    display:  block;
-  }
-
-  .sm\:hidden{
-    display:  none;
-  }
-
   .sm\:w-\[70x\]{
     width:  70x;
   }
@@ -1733,10 +1770,6 @@ header {
 @media (min-width: 1024px){
   .md\:order-2{
     order:  2;
-  }
-
-  .md\:block{
-    display:  block;
   }
 
   .md\:flex{
