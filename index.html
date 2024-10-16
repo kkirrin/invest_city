@@ -12,7 +12,7 @@
     <link rel=" stylesheet" href="css/main.css">
 </head>
 
-<body>
+<body class="wrapper">
     
     <div>
         <header>
@@ -253,15 +253,12 @@
 
             </section>
 
-            <section id="info-section-2">
-                   <div class="container">
+            <section id="info-section-2" class="relative">
+                    <img src="./src/img/img/pattern_3.png" class="pattern_3 wow fadeInLeft" alt="" data-wow-delay="1s"> 
+                   <div class="container relative" style="z-index: 2;">
 
-                         <div class="relative w-full">
-                            <img src="./src/img/img/pattern_2.png" class="pattern_2 wow fadeInLeft" alt="" data-wow-delay="1s"> 
-                        </div>
-
-                        <div class="flex justify-between items-center md:pb-[80px] sm:pb-[40px] pb-[40px] md:pt-[55px] sm:pt-[50px] pt-[30px]">
-                            <div class="max-w-[466px]">
+                        <div class="flex md:flex-row flex-col justify-between md:items-center items-baseline md:pb-[80px] sm:pb-[40px] pb-[40px] md:pt-[55px] sm:pt-[50px] pt-[30px]">
+                            <div class="md:max-w-[466px] max-w-[260px]">
                                 <p class="md:text-[20px] sm:text-[14px] text-[14px] font-normal">Объект предусматривает наличие всех
                                 сфер, необходимых для комфортной жизни. Проект обладает высоким уровнем транспортной доступности, привлекательной архитектурой 
                                 и широким выбором планировок.</p>
@@ -326,6 +323,134 @@
                     </svg>
             </section>
 
+
+            <section id="ticker" class="relative">
+                <img src="./src/img/img/pattern_2.png" class="pattern_2 wow fadeInRight" alt="" data-wow-delay="1s"> 
+               <div class="ticker">
+                    <div class="ticker__in">
+                        <div class="ticker__item">
+                            <a href="#popup2" class="popup-link">Выбрать квартиру</a>
+                        </div>
+                        <div class="ticker__item">
+                            <a href="#popup1" class="popup-link">Выбрать квартиру</a>
+                        </div>
+                        <div class="ticker__item">
+                            <a href="#popup1" class="popup-link">Выбрать квартиру</a>
+                        </div>
+                    </div>
+               </div>
+
+               <div class="container" style="height: 1px;"></div>
+            </section>
+
+            <section id="architecture" class="relative">
+                <div class="container">
+                    <h2 class="md:text-[80px] sm:text-[40px] text-[31px] uppercase md:pt-[60px] md:pb-[80px] sm:pt-[30px] sm:pb-[30px] pt-[30px] pb-[30px] relative z-[2]">АРХИТЕКТУРА</h2>
+
+                    <img src="./src/img/img/pattern_4.png" class="pattern_4 wow fadeInLeft" alt="" data-wow-delay="1s"> 
+
+                    <div class="grid md:grid-cols-3 grid-col-1 gap-[30px] relative z-[2]">
+                        <div class="flex flex-col gap-[76px] floating ff5">
+                            <img src="./src/img/img/Атриум.png" alt="">
+                            <p class="md:text-[24px] text-[12px]">На эксплуатируемой кровле здания предусмотрено открытое южному солнцу, благоустроенное пространство внутреннего двора с детскими и спортивными площадками и озеленением</p>
+                        </div>
+                            
+                        <div class="circle__wrapper floating reverse" style="display: flex; justify-content: center; align-items: center;">
+                            <button class="circle__btn">
+                                ОСТАВИТЬ <br> ЗАЯВКУ
+                            </button>
+                        </div>
+                        
+
+                        <div class="flex flex-col gap-[76px] floating ff5">
+                            <p class="text-end md:text-[24px] text-[12px] font-normal">Светлые оттенки на фасаде здания подчеркивают легкость и динамичность архитектуры. Сочетание прозрачного структурного остекления и фасадных плит создают пластичность фасада. Использование витражного остекления в интерьерных решениях играет роль связующего звена между внутренним и внешним пространством. <span class="font-bold">Видовые квартиры с панорамным остеклением</span></p>
+                            <img src="./src/img/img/Атриум.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="all_for_comfort" class="overflow-hidden relative">
+                <div class="container">
+                    <h2 class="md:text-[60px] sm:text-[40px] text-[31px] uppercase md:pt-[60px] md:pb-[80px] sm:pt-[30px] sm:pb-[30px] pt-[30px] pb-[30px] relative z-[2]">Все необходимое для комфортной жизни в одном месте</h2>
+
+                    <div class="comfort-wrapper">
+                            <div class="relative">
+                                <div style="width: -webkit-fill-available;">
+                                    <div class="w-full md:h-[389px] h-[250px]">
+                                        <img src="src/img/img/comfort3.png" class="object-cover h-full w-full" alt="">
+                                    </div>
+
+                                    <div class="p-[30px] h-[311px]">
+                                        <div class="bg-biege p-[30px] h-full">
+                                            <p>В жилом комплексе предусмотрено <span class="font-bold">наличие супермаркета, магазинов, офисных помещений, фитнес центра, спортивных площадок и зон для отдыха</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative">
+                                <div style="width: -webkit-fill-available;">
+                                    <div class="w-full md:h-[389px] h-[250px]">
+                                        <img src="src/img/img/comfort5.png" class="object-cover h-full w-full" alt="">
+                                    </div>
+
+                                    <div class="p-[30px] h-[311px]">
+                                        <div class="bg-biege p-[30px] h-full">
+                                            <p>А так же на территории комплекса будет расположен <span class="font-bold">центр развития детей дошкольного возраста</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative">
+                                <div style="width: -webkit-fill-available;">
+                                    <div class="w-full md:h-[389px] h-[250px]">
+                                        <img src="src/img/img/comfort6.png" class="object-cover h-full w-full" alt="">
+                                    </div>
+
+                                    <div class="p-[30px] h-[311px]">
+                                        <div class="bg-biege p-[30px] h-full">
+                                            <p class="font-bold">Подземный двухуровневый паркинг</p>
+                                            <p class="pt-[10px]"><span class="font-bold">Кладовые помещения</span> «сити-боксы» под ваши вещи, которые позволяют освободить пространство для жизни</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative">
+                                <div style="width: -webkit-fill-available;">
+                                    <div class="w-full md:h-[389px] h-[250px]">
+                                        <img src="src/img/img/comfort1.png" class="object-cover h-full w-full" alt="">
+                                    </div>
+
+                                    <div class="p-[30px] h-[311px]">
+                                        <div class="bg-biege p-[30px] h-full">
+                                            <p class="pt-[10px]">Собственный <span class="font-bold">центральный парк 1 Га с променадом</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="relative">
+                                <div style="width: -webkit-fill-available;">
+                                    <div class="w-full md:h-[389px] h-[250px]">
+                                        <img src="src/img/img/comfort7.png" class="object-cover h-full w-full" alt="">
+                                    </div>
+
+                                    <div class="p-[30px] h-[311px]">
+                                        <div class="bg-biege p-[30px] h-full">
+                                            <p class="pt-[10px]">Одним из удобств, которое доступно жильцам ЖК Атриум является <span class="font-bold">фитнес-центр</span>. Который позволит вам постоянно находится в тонусе и хорошей форме</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            
         </main>
 
         <footer class="footer page-section-3 bg-black pb-10 pt-10 wow fadeInUp" data-wow-delay="0.2s">
@@ -429,7 +554,81 @@
             </div> 
         
         </footer>
-   
+
+        <section id="popup1" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                            <path d="M4 1.45508L19.9099 17.365" stroke="#fff" />
+                            <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#fff" />
+                        </svg>
+                    </button>
+
+                     <h2 class="text-white uppercase md:text-[34px] sm:text-[30px] text-[30px] text-start">Получить консультацию</h2>
+    
+                    <div class="flex flex-col md:max-w-[300px] max-w-full">
+                        <input class="form__input" placeholder="Введите имя*" />
+                        <input class="form__input" placeholder="Введите телефон*" />
+     
+                        <p class="text-biege text-start pt-[30px]">
+                            *Нажимая на кнопку, вы соглашаетесь <br> на обработку персональных данных
+                        </p>
+                    </div>
+                    <div class="circle__wrapper">
+                        <button class="circle__btn button-popup">
+                            ОСТАВИТЬ <br> ЗАЯВКУ
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="popup2" class="popup">
+            <div class="popup__body">
+                <div class="popup__content popup__content--white">
+                    <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                            <path d="M4 1.45508L19.9099 17.365" stroke="#000" />
+                            <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#000" />
+                        </svg>
+                    </button>
+
+                     <h2 class="text-black uppercase md:text-[32px] sm:text-[30px] text-[30px] text-start">Ипотека по госпрограммам</h2>
+
+                     <p class="text-black pt-[15px] text-start">Рассчитайте ипотеку от банков-партнеров</p>
+    
+                        <ul class="grid md:grid-cols-4 grid-cols-2 md:pt-[50px] pt-[22px] gap-[12px]">
+                            <li>
+                                <a href="">
+                                    <img src="/src/img/img/cber.png" alt="">    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="src/img/img/prim.png" alt="">    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="src/img/img/vtb.png" alt="">    
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="src/img/img/dvb.png" alt="">    
+                                </a>
+                            </li>
+                        </ul>
+                </div>
+            </div>
+        </section>
+
+
+    <script src="/js/vendor/gsap.min.js"></script>
+    <script src="js/vendor/ScrollTrigger.min.js"></script>
+    <script src="js/vendor/ScrollToPlugin.min.js"></script>
+
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/smoothscroll.js"></script>
     <script src="js/wow.js"></script>

@@ -11,6 +11,8 @@
 @import './block/animateSocialsBtn.css';
 @import './block/button.css';
 @import './block/info-section.css';
+@import './block/ticker.css';
+@import './block/parallax.css';
 
 /* Импорт TailWind */
 @tailwind base;
@@ -119,7 +121,20 @@
 
 .pattern_2 {
     position: absolute;
+    top: 25%;
+    right: 0px;
+    z-index: 0;
+}
+.pattern_3 {
+    position: absolute;
     top: 0px;
+    left: 0px;
+    z-index: 1;
+}
+
+.pattern_4 {
+    position: absolute;
+    top: 28%;
     left: 0px;
     z-index: 1;
 }
@@ -182,11 +197,38 @@
     background-position: top center;
 }
 
-#map_img {
-    margin-top: 60px;
+#architecture {
+    padding: 60px 0px 120px 0;
+    position: relative;
 }
 
+#architecture .container::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: var(--biege);
+}
 
+#all_for_comfort {
+    padding: 60px 0px 120px 0;
+    position: relative;
+}
+
+#all_for_comfort .comfort-wrapper div:first-child{
+    border: 1px solid var(--biege);
+}
+
+.comfort-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.comfort-wrapper > div {
+    min-width: 400px;
+}
 
 header {
     position: fixed;
@@ -198,9 +240,14 @@ header {
     #main-section {
         background-image: url('../src/img/img/bg-main-m.png');    
     }
+    #architecture {
+        padding: 30px 0px 80px 0;
+    }
+
     
     #map_img {
         background-image: url('../src/img/img/map-m.png');
+        height: 100%
     }
 }
 
@@ -219,6 +266,24 @@ header {
         right: -0px;
         z-index: 1;
     }
+    .pattern_3 {
+        position: absolute;
+        top: 0px;
+        left: -0px;
+        z-index: 1;
+    }
+    #map_img {
+        height: 100%;
+    }
+    #architecture {
+        padding: 30px 0px 60px 0;
+    }
+
+    h2, h3 {
+        font-family: 'Bahnschrift';
+        line-height: 33px;
+    }
+
 }
 
 
