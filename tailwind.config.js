@@ -18,6 +18,7 @@ module.exports = {
       'white': '#fff',
       'brown-light': '#94765B',
       'brown-dark': '#816F67',
+      'brown-custom': '#756B63',
       'biege': '#D7CDC9',
       'biege-dark': '#9E918C',
       'bg': '#E8E4E2',

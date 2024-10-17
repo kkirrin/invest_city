@@ -49,6 +49,7 @@
     --white: #fff;
     --brown-light: #94765B;
     --brown-dark: #816F67;
+    --brown-custom: #756B63;
     --biege: #D7CDC9;
     --biege-dark: #9E918C;
     --bg: #E8E4E2;
@@ -325,6 +326,21 @@
     left: 0;
     height: 40px;
     background-color: var(--white);
+}
+
+#location {
+    padding: 60px 0;
+    background-color: #383737;
+}
+
+#location h2::before {
+    content: '';
+    max-width: 1440px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 2px;
+    background-color: #57504A;
 }
 
 header {

@@ -1974,6 +1974,11 @@ h2, h3 {
   color:  rgb(57 61 70 / var(--tw-text-opacity));
 }
 
+.text-brown-custom{
+  --tw-text-opacity:  1;
+  color:  rgb(117 107 99 / var(--tw-text-opacity));
+}
+
 .text-brown-dark{
   --tw-text-opacity:  1;
   color:  rgb(129 111 103 / var(--tw-text-opacity));
@@ -2043,6 +2048,7 @@ h2, h3 {
   --white: #fff;
   --brown-light: #94765B;
   --brown-dark: #816F67;
+  --brown-custom: #756B63;
   --biege: #D7CDC9;
   --biege-dark: #9E918C;
   --bg: #E8E4E2;
@@ -2279,6 +2285,21 @@ h2, h3 {
   left: 0;
   height: 40px;
   background-color: var(--white);
+}
+
+#location {
+  padding: 60px 0;
+  background-color: #383737;
+}
+
+#location h2::before {
+  content: '';
+  max-width: 1440px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 2px;
+  background-color: #57504A;
 }
 
 header {
