@@ -1,6 +1,6 @@
 import { initNav } from './module/nav.js';
 import { initPopup } from './module/popup.js';
-import { initComfortSlider } from './module/sliders.js';
+import { initProgrammSlider } from './module/sliders.js';
 import { initHorizontalScroll } from './module/horizontalScroll.js';
 import { initCounterAnimation } from './module/counter-animation.js';
 
@@ -10,7 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
     initNav();
     initPopup();
-    initComfortSlider();
+    initProgrammSlider();
     initHorizontalScroll();
     initCounterAnimation();
 

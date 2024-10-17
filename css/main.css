@@ -627,6 +627,35 @@
   right: 20px;
 }
 
+.button_main.button_main__podrobnee {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.program-slide-next svg {
+  transition: all 0.2s ease-in-out;
+}
+
+.program-slide-next svg circle {
+  transition: all 0.2s ease-in-out;
+}
+
+.program-slide-next:hover svg {
+  fill:  var(--biege);
+}
+
+.program-slide-next:active svg {
+  fill:  var(--biege-dark);
+}
+
+.program-slide-next:active svg circle{
+  stroke: var(--biege);
+}
+
+.program-slide-next:active svg path{
+  fill:  var(--biege);
+}
+
 @media screen and (max-width: 480px) {
   .circle__wrapper button.button-popup {
     position: relative;
@@ -1594,6 +1623,10 @@ h2, h3 {
   height:  311px;
 }
 
+.h-\[430px\]{
+  height:  430px;
+}
+
 .h-full{
   height:  100%;
 }
@@ -1646,6 +1679,10 @@ h2, h3 {
   max-width:  20rem;
 }
 
+.transform{
+  transform:  translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .grid-cols-2{
   grid-template-columns:  repeat(2, minmax(0, 1fr));
 }
@@ -1688,6 +1725,10 @@ h2, h3 {
 
 .gap-4{
   gap:  1rem;
+}
+
+.gap-\[10px\]{
+  gap:  10px;
 }
 
 .gap-\[12px\]{
@@ -1764,6 +1805,16 @@ h2, h3 {
   padding-right:  1rem;
 }
 
+.px-\[44px\]{
+  padding-left:  44px;
+  padding-right:  44px;
+}
+
+.px-\[60px\]{
+  padding-left:  60px;
+  padding-right:  60px;
+}
+
 .py-1{
   padding-top:  0.25rem;
   padding-bottom:  0.25rem;
@@ -1772,6 +1823,16 @@ h2, h3 {
 .py-2{
   padding-top:  0.5rem;
   padding-bottom:  0.5rem;
+}
+
+.py-\[116px\]{
+  padding-top:  116px;
+  padding-bottom:  116px;
+}
+
+.py-\[44px\]{
+  padding-top:  44px;
+  padding-bottom:  44px;
 }
 
 .pb-10{
@@ -2057,6 +2118,13 @@ h2, h3 {
   z-index: 0;
 }
 
+.pattern_7 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
 .pattern_8 {
   position: absolute;
   top: -40%;
@@ -2151,7 +2219,7 @@ h2, h3 {
 #variants {
   position: relative;
   background: #383737;
-  padding: 120px 0;
+  padding: 60px 0;
 }
 
 #variants .container::after {
@@ -2178,6 +2246,39 @@ h2, h3 {
   top: 0px;
   height: 1px;
   background-color: var(--biege);
+}
+
+#programs {
+  padding: 0px 0px 140px 0;
+}
+
+#programs .container::after {
+  content: '';
+  max-width: 1440px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  height: 2px;
+  background-color: var(--biege);
+}
+
+.program-item p {
+  position: relative;
+  font-weight: 700;
+  color: white;
+  font-size: clamp(1.125rem, 1.125vw + 0.9rem, 2rem);
+  font-family: 'Bahnschrift';
+  text-transform: uppercase;
+}
+
+.program-item p::before {
+  content: '';
+  position: absolute;
+  width: 1px;
+  top: 100%;
+  left: 0;
+  height: 40px;
+  background-color: var(--white);
 }
 
 header {
@@ -2351,6 +2452,16 @@ header {
 
   .md\:p-\[110px\]{
     padding:  110px;
+  }
+
+  .md\:px-\[60px\]{
+    padding-left:  60px;
+    padding-right:  60px;
+  }
+
+  .md\:py-\[116px\]{
+    padding-top:  116px;
+    padding-bottom:  116px;
   }
 
   .md\:pb-\[100px\]{

@@ -153,6 +153,13 @@
     z-index: 0;
 }
 
+.pattern_7 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+}
+
 .pattern_8 {
     position: absolute;
     top: -40%;
@@ -258,7 +265,7 @@
 #variants {
     position: relative;
     background: #383737;
-    padding: 120px 0;
+    padding: 60px 0;
 }
 
 #variants .container::after {
@@ -285,6 +292,39 @@
     top: 0px;
     height: 1px;
     background-color: var(--biege);
+}
+
+#programs {
+    padding: 0px 0px 140px 0;
+}
+
+#programs .container::after {
+    content: '';
+    max-width: 1440px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 2px;
+    background-color: var(--biege);
+}
+
+.program-item p {
+    position: relative;
+    font-weight: 700;
+    color: white;
+    font-size: clamp(1.125rem, 1.125vw + 0.9rem, 2rem);
+    font-family: 'Bahnschrift';
+    text-transform: uppercase;
+}
+
+.program-item p::before {
+    content: '';
+    position: absolute;
+    width: 1px;
+    top: 100%;
+    left: 0;
+    height: 40px;
+    background-color: var(--white);
 }
 
 header {

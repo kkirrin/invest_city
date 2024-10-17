@@ -124,6 +124,37 @@
     right: 20px;
 }
 
+
+.button_main.button_main__podrobnee {
+    width: fit-content;
+}
+
+.program-slide-next svg {
+    transition: all 0.2s ease-in-out;
+} 
+
+.program-slide-next svg circle {
+    transition: all 0.2s ease-in-out;
+}
+
+.program-slide-next:hover svg {
+    fill:  var(--biege);
+}
+
+.program-slide-next:active svg {
+    fill:  var(--biege-dark);
+}
+
+.program-slide-next:active svg circle{
+    stroke: var(--biege);
+
+}
+
+.program-slide-next:active svg path{
+    fill:  var(--biege);
+}
+
+
 @media screen and (max-width: 480px) {
     .circle__wrapper button.button-popup {
         position: relative;

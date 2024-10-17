@@ -1,15 +1,15 @@
-export const initComfortSlider = () => {
-    const generalSlider = document.querySelector('.comfort-item');
+export const initProgrammSlider = () => {
+    const generalSlider = document.querySelector('.program-item');
 
     if (generalSlider) {
 
         const swiper = new Swiper(generalSlider, {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 20,
-            speed: 1300,
+            speed: 3000,
             navigation: {
-                nextEl: '.next-new--item-1',
-                prevEl: '.prev-new--item-1',
+                nextEl: '.program-slide-next',
+                prevEl: '.program-slide-prev',
             },
 
             breakpoints: {
@@ -17,21 +17,20 @@ export const initComfortSlider = () => {
                     slidesPerView: 1,
                 },
                 460: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                 },
                 460: {
-                    slidesPerView: 2,
+                    slidesPerView: 1,
                     spaceBetween: 10
                 },
                 769: {
-                    slidesPerView: 3,
+                    slidesPerView: 2,
                     spaceBetween: 20
                 },
                 1047: {
-                    slidesPerView: 3,
-                    spaceBetween: 15
+                    slidesPerView: 2,
                 }
-            }
-        });
+            },
+        })
     }
 }
