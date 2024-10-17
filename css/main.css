@@ -768,7 +768,7 @@
   max-width: 1440px;
 }
 
-#ticker .container::after {
+#ticker.after .container::after {
   content: '';
   position: absolute;
   width: 100%;
