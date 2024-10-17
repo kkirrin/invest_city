@@ -21,6 +21,30 @@
     color: var(--white);
 }
 
+.button_main_variant > *{
+    position: relative;
+    color: var(--black);
+}
+
+.button_main_variant::before {
+    content: '';
+    position: absolute;
+    z-index: 0;
+    top: -2px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    width: 125px;
+    height: calc(100% + 4px);
+    /* background-color: var(--bg);  */
+}
+
+.button_main_variant.active {
+    position: relative;
+    background-color: var(--brown-light);
+    color: var(--white);
+}
+
+
 
 .button_main {
     background: rgba(148, 118, 91, 1);

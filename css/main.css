@@ -531,6 +531,29 @@
   color: var(--white);
 }
 
+.button_main_variant > *{
+  position: relative;
+  color: var(--black);
+}
+
+.button_main_variant::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: -2px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 125px;
+  height: calc(100% + 4px);
+  /* background-color: var(--bg);  */
+}
+
+.button_main_variant.active {
+  position: relative;
+  background-color: var(--brown-light);
+  color: var(--white);
+}
+
 .button_main {
   background: rgba(148, 118, 91, 1);
   color: white;
@@ -736,6 +759,14 @@
   width: -moz-max-content;
   width: max-content;
   position: relative;
+}
+
+.ticker__item:hover a {
+  color: var(--dark-briege);
+}
+
+.ticker__item:active a {
+  color: var(--briege);
 }
 
 .ticker__item::before {
@@ -1606,6 +1637,10 @@ h2, h3 {
   gap:  12px;
 }
 
+.gap-\[20px\]{
+  gap:  20px;
+}
+
 .gap-\[30px\]{
   gap:  30px;
 }
@@ -1804,6 +1839,11 @@ h2, h3 {
   color:  rgb(57 61 70 / var(--tw-text-opacity));
 }
 
+.text-brown-dark{
+  --tw-text-opacity:  1;
+  color:  rgb(129 111 103 / var(--tw-text-opacity));
+}
+
 .text-white{
   --tw-text-opacity:  1;
   color:  rgb(255 255 255 / var(--tw-text-opacity));
@@ -1929,6 +1969,28 @@ h2, h3 {
   z-index: 1;
 }
 
+.pattern_5 {
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+  z-index: 1;
+}
+
+.pattern_6 {
+  position: absolute;
+  top: -45%;
+  left: 0;
+  z-index: 0;
+}
+
+.pattern_8 {
+  position: absolute;
+  top: -40%;
+  left: -90px;
+  scale: 1.4;
+  z-index: 3;
+}
+
 .main__svg {
   width: 100%;
   height: auto;
@@ -2012,10 +2074,27 @@ h2, h3 {
   min-width: 400px;
 }
 
+#variants {
+  position: relative;
+  background: #383737;
+  padding: 120px 0;
+}
+
+#variants .container::after {
+  content: '';
+  position: absolute;
+  max-width: 1440px;
+  width: -webkit-fill-available;
+  bottom: 0;
+  top: 100px;
+  height: 2px;
+  background-color: var(--brown-dark);
+}
+
 header {
   position: fixed;
   width: -webkit-fill-available;
-  z-index: 2;
+  z-index: 10;
 }
 
 @media screen and (max-width: 769px) {
@@ -2185,6 +2264,10 @@ header {
     padding-bottom:  100px;
   }
 
+  .md\:pb-\[60px\]{
+    padding-bottom:  60px;
+  }
+
   .md\:pb-\[80px\]{
     padding-bottom:  80px;
   }
@@ -2227,6 +2310,10 @@ header {
 
   .md\:text-\[60px\]{
     font-size:  60px;
+  }
+
+  .md\:text-\[70px\]{
+    font-size:  70px;
   }
 
   .md\:text-\[80px\]{

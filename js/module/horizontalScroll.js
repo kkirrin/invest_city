@@ -1,19 +1,16 @@
 export const initHorizontalScroll = () => {
     const pinSection = document.querySelector('#all_for_comfort');
-    const pinWrapper = document.querySelector('.comfort_wrapper');
+    const pinWrapper = document.querySelector('.comfort-wrapper');
 
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
 
-
-    console.log(pinSection, pinWrapper)
-
-     if (document.querySelector("#all_for_comfort")) {
+     if (pinSection) {
         const timelineScroll = gsap.timeline({
             scrollTrigger: {
                 trigger: "#all_for_comfort",
-                start: "top-=-50 top",
-                end: () => "+=" + document.querySelector(".comfort-wrapper").scrollWidth + "px",
+                start: "top-=-140 top",
+                end: () => "+=" + pinWrapper.scrollWidth + "px",
                 pin: true,
                 // markers: true,
                 scrub: true,
@@ -21,7 +18,7 @@ export const initHorizontalScroll = () => {
         });
 
         timelineScroll.to(".comfort-wrapper", {
-            x: () => -(document.querySelector(".comfort-wrapper").scrollWidth - document.querySelector(".comfort-wrapper").offsetWidth),
+            x: () => -(pinWrapper.scrollWidth - pinWrapper.offsetWidth),
         }, "start");
     }
 

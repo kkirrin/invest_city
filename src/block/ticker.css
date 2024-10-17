@@ -42,6 +42,14 @@
     position: relative;
 }
 
+.ticker__item:hover a {
+    color: var(--dark-briege);
+}
+
+.ticker__item:active a {
+    color: var(--briege);
+}
+
 .ticker__item::before {
     content: '';
     position: absolute;
