@@ -1747,6 +1747,10 @@ h2, h3 {
   gap:  40px;
 }
 
+.gap-\[50px\]{
+  gap:  50px;
+}
+
 .gap-\[76px\]{
   gap:  76px;
 }
@@ -2300,6 +2304,39 @@ h2, h3 {
   top: 0;
   height: 2px;
   background-color: #57504A;
+}
+
+#contacts {
+  padding: 60px 0;
+  background-color: #383737 ;
+}
+
+.custom__text {
+  position: relative;
+  z-index: 1;
+}
+
+.custom__text > * {
+  position: relative;
+  z-index: 1;
+}
+
+.custom__text--contacts {
+  border: 1px solid #57504A;
+  z-index: 1;
+}
+
+.custom__text--contacts::before {
+  content: '';
+  position: absolute;
+  z-index: 0;
+  top: -2px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 200px;
+  height: calc(100% + 4px);
+  background-color: #383737;
+  transition: all 0.2s ease-in-out;
 }
 
 header {
