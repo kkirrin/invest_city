@@ -272,6 +272,21 @@
     background-color: var(--brown-dark);
 }
 
+#type {
+    padding: 120px 0;
+}
+
+#type h2::before {
+    content: '';
+    position: absolute;
+    max-width: 1440px;
+    width: -webkit-fill-available;
+    bottom: 0;
+    top: 0px;
+    height: 1px;
+    background-color: var(--biege);
+}
+
 header {
     position: fixed;
     width: -webkit-fill-available;

@@ -21,22 +21,63 @@
     color: var(--white);
 }
 
+.button_main_variant {
+    padding: 20px;
+    border: 1px solid var(--biege);
+    width: -webkit-fill-available;
+    max-width: 400px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.button_main_variant:hover > *, .button_main_variant:hover > :nth-child(2) {
+    color: white;
+}
+
+.button_main_variant:hover  {
+    background-color: var(--brown-light);
+}
+
+.button_main_variant:active  {
+    background-color: var(--biege);
+}
+
+.button_main_variant:active::before {
+    background-color: var(--biege) !important;
+
+}
+
+.button_main_variant:hover::before { 
+    background-color: var(--brown-light);
+    top: 3px;
+    height: calc(94% + 0px);
+}
+
+.button_main_variant > :nth-child(2) {
+    color: var(--brown-light);
+}
+
 .button_main_variant > *{
     position: relative;
     color: var(--black);
+    transition: all 0.2s ease-in-out;
+
 }
 
 .button_main_variant::before {
     content: '';
     position: absolute;
     z-index: 0;
-    top: -2px;
+    top: 0;
     left: 50%;
     transform: translate(-50%, 0%);
-    width: 125px;
-    height: calc(100% + 4px);
-    /* background-color: var(--bg);  */
+    width: 200px;
+    height: calc(100% + 0px);
+    background-color: var(--bg); 
+    transition: all 0.2s ease-in-out;
 }
+
+
 
 .button_main_variant.active {
     position: relative;
@@ -53,26 +94,28 @@
     width: 100%;
     text-align: center;
     border-radius: 30px;
-    padding: 15px 97px;
+    padding: 15px 90px;
     text-transform: uppercase;
     font-weight: 500;
-        transition: all 0.4s ease-in-out;
-
+    transition: all 0.4s ease-in-out;
 }
-
 
 .button_main:hover {
     background-color: var(--biege);
     color: var(--brown-light);
-
 }
-
 
 .button_main:active {
     background-color: var(--biege-dark);
     color: var(--white);
 }
 
+.button_main.button_main--watch {
+    font-size: clamp(0.75rem, 0.375vw + 0.675rem, 1.125rem);
+    max-width: 500px;
+    width: -webkit-fill-available;
+    padding: 13px 50px;
+}
 
 .circle__wrapper button.button-popup {
     text-align: center;
@@ -94,5 +137,10 @@
     .circle__wrapper button {
         width:  130px;
         height: 130px;
+    }
+    .button_main.button_main--watch {
+        max-width: 471px;
+        width: -webkit-fill-available;
+        padding: 13px;
     }
 }

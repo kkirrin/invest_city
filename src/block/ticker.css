@@ -42,13 +42,18 @@
     position: relative;
 }
 
+.ticker__item a {
+    transition: all .2s ease-in-out;
+}
+
 .ticker__item:hover a {
     color: var(--dark-briege);
 }
 
 .ticker__item:active a {
-    color: var(--briege);
+    color: var(--biege) !important;
 }
+
 
 .ticker__item::before {
     content: '';
