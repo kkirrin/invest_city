@@ -1,5 +1,9 @@
 .mobile-menu {
-    background-color: rgba(44, 44, 44, 0.9);
+    width: -webkit-fill-available;
+    background: rgba(56, 55, 55, 1);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
     transition: opacity 0.8s ease;
     opacity: 0;
     visibility: hidden;
@@ -11,6 +15,22 @@
     overflow: auto;
 }
 
+
+
+div.vertical__line {
+    position: relative;
+}
+
+div.vertical__line::before {
+    content: '';
+    position: absolute;
+    height: -webkit-fill-available;
+    z-index: 1000;
+    width: 2px;
+    top: 0;
+    left: -10%;
+    background: #BEC5D2;
+}
 
 
 
@@ -57,4 +77,28 @@
 
 .menu.is-active ~ .mask{
     right: 0px;
+}
+
+@media screen and (max-width: 769px) {
+    .mobile-menu {
+        height: 100vh;
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .mobile-menu {
+        flex-direction: column;
+        justify-content: normal;
+
+    }
+    div.vertical__line::before {
+        content: '';
+        position: absolute;
+        height: 2px;
+        z-index: 1000;
+        width: -webkit-fill-available;
+        left: 16px;
+        background:W #BEC5D2;
+    }
 }

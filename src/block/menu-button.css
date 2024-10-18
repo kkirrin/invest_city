@@ -1,5 +1,4 @@
 .btn__menu {
-    --color:  #262626;
     width: 36px;
     height: 36px;
     padding: 0;
@@ -17,7 +16,7 @@
 .btn__menu svg {
     width: 55px;
     height: 40px;
-    top: -2px;
+    top: -10px;
     left: -7px;
     stroke: white;
     stroke-width: 3px;
@@ -71,7 +70,8 @@
 
 
 .btn__menu--mobile {
-    --color:  #262626;
+    z-index: 1000;
+    --color:  var(--white);
     width: 36px;
     height: 36px;
     padding: 0;

@@ -27,7 +27,7 @@
                                     
                         
                 <!-- Мобильная кнопка -->
-                <div class="btn__menu--mobile bg-red rounded-xl shadow-md shadow-main-black items-center gap-10 md:hidden flex">
+                <div class="btn__menu--mobile md:hidden flex">
                     <button class="flex items-center gap-2 pl-10 pr-2 py-1 rounded">
                         <svg class="h-3 w-3" viewBox="0 0 64 48">
                             <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
@@ -38,89 +38,32 @@
                 </div>
 
                 <div class="mobile-menu">  
-                    <div class="container flex md:justify-between justify-evenly md:flex-nowrap flex-wrap text-white">
-                        <div>
-                            <p class="pb-4">Каталог</p>
-                            <ul class="text-gray md:text-base text-xs">
-                                <li class="pb-8">
-                                    <a href="">Авто с аукционов Японии</a>
-                                </li>  
-                                <li class="pb-8">
-                                    <a href="">Авто с аукционов Кореи</a>
-                                </li>  
-                                <li class="pb-8">
-                                    <a href="">Популярные авто</a>
-                                </li>  
-                                <li class="pb-8">
-                                    <a href="">Авто в наличии</a>
-                                </li>  
-                                <li class="pb-8">
-                                    <a href="">Сейчас на аукционах</a>
-                                </li>  
-                            </ul>
-                        </div>
-                        <div>
-                            <p class="pb-4">Клиентам</p>
-                            <ul class="text-gray md:text-base text-xs">
-                                <li class="pb-8">
-                                    <a href="#">О компании</a>
-                                </li>  
-                                <li class="pb-8">
-                                    <a href="">Отзывы</a>
-                                </li>  
-                                <li class="pb-8">
-                                    <a href="">Доставка</a>
-                                </li>  
-                                <li class="pb-8">
-                                    <a href="">Выполненные заказы</a>
-                                    </li>  
-                                <li class="pb-8">
-                                <a href="#">
-                                    Скачать договор pdf
-                                </a>
-                                </li>  
-                            </ul>
-                        </div>
-                        <div>
-                            <p class="pb-4">Мы в соц.сетях</p>
-                            <ul class="flex items-center justify-center gap-4">
-                                <li class="pb-8 flex items-center gap-4">
-                                    <img src="./src/img/icons_nav/sap.svg" alt="">
-                                    <img src="./src/img/icons_nav/tg.svg" alt="">
-                                    <img src="./src/img/icons_nav/vk.svg" alt="">
-                                    <img src="./src/img/icons_nav/inst.svg" alt="">
-                                    <img src="./src/img/icons_nav/youtube.svg" alt="">
-                                </li>  
-                            </ul>
-                        </div>
-                    
-                        <div>
-                            <p class="pb-4">КОНТАКТЫ</p>
-                            <ul>
-                                <li class="pb-10 pr-8 flex items-center">
-                                    <img class="mr-2" src="./src/img/icons_nav/phonw.svg" alt="">
-                                    <a href="tel:79020607575">+79020607575, +79020605757</a>
-                                </li>
-                                <li class="pb-10 pr-8 flex items-center">
-                                    <img class="mr-2" src="./src/img/icons_nav/email.svg" alt="">
-                                    <a href="mailto:Avtopotencial-DV@mail.ru">Avtopotencial-DV@mail.ru</a>
-                                </li>
-                                <li class="pb-10  pr-8 flex items-center max-w-xs">
-                                    <img class="mr-2" src="./src/img/icons_nav/geo.svg" alt="">
-                                    <p>г.  Владивосток, ул. Тухачевского 35 , 2 этаж, т/ц Тухачевский</p>
-                                </li>
-                                <li class="pb-10 flex items-center">
-                                    <img class="mr-2" src="./src/img/icons_nav/clock.svg" alt="">
-                                    <p>Пн-Пт 9:00-18:00</p>
-                                </li>
-                                
-                                <li class="">
-                                    <button class="bg-red up py-2 px-10 text-white rounded-lg">
-                                        Заказать авто
-                                    </button>
-                                </li>
-                            </ul>
-                        </div>  
+                    <div class=" max-h-[500px]">
+                        <ul class="flex flex-col text-white mt-[30px]">
+                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors">О жилом комплексе</a></li>
+                            
+                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors">Генплан</a></li>
+                            
+                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors">Архитектура</a></li>
+                        
+                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors">Инфраструктура</a></li>
+                            
+                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors">Отделка</a></li>
+                            
+                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors">Типы планировок</a></li>
+                            
+                            <li class="px-4 mb-4"><a class="md:text-[24px] sm:text-[16px] text-[16px] font-medium hover:text-green transition-colors">Типы планировок</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col justify-between max-h-[300px] vertical__line">
+                        <ul class="gap-2 mt-[30px]">
+                            <li class="px-4 mb-[18px]"><a class="text-white">г. Уссурийск, ул. Советскую, 149</a></li>
+                            <li class="px-4 mb-[18px]"><a class="text-white font-medium" href="tel:+79146504455">+7 (914) 650 44 55,</a> <a class="text-white font-medium" href="tel:+79241204050">+7 (924) 120 40 50</a></li>
+                            <li class="px-4 mb-[18px]"><a class="text-white font-medium" href='mailto:invest-sity21@bk.ru'>invest-sity21@bk.ru</a></li>
+                        </ul>
+                        
+                        <button class="button_main">Выбрать квартиру</button>  
                     </div>
                 </div>
 
@@ -130,20 +73,22 @@
                     <li class="mr-2"><a class="text-white" href="tel:+79146504455">+7 (914) 650 44 55,</a></li>
                     <li class="mr-2"><a class="text-white" href="tel:+79241204050">+7 (924) 120 40 50</a></li>
                     <li class="mr-2"><a class="text-white" href='mailto:invest-sity21@bk.ru'>invest-sity21@bk.ru</a></li>
+
+                    <div class="btn__menu up md:flex hidden">
+                        <button class="flex up items-center gap-2 bg-red pl-10 pr-2 py-1 rounded">
+                            <svg class="h-6 w-6" viewBox="0 0 64 48">
+                                <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+                                <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+                                <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+                            </svg>
+                        </button>        
+                    </div>
+                    
                 </ul>
 
 
                 
                  <!-- Меню кнопка -->
-                <div class="btn__menu up rounded-xl shadow-md shadow-main-black md:flex hidden">
-                    <button class="flex up items-center gap-2 bg-red pl-10 pr-2 py-1 rounded">
-                        <svg class="h-6 w-6" viewBox="0 0 64 48">
-                            <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
-                            <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
-                            <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
-                        </svg>
-                    </button>        
-                </div>
                                         
                 <div class="menu overflow-hidden line__horizontal">
                     <ul class="flex flex-col text-white mt-[30px]">
@@ -179,7 +124,7 @@
             </div>
         </header>
 
-        <main>
+        <!-- <main>
             <h1 class="visually-hidden">Скрытый заголовок</h1>
 
             <section id="main-section" class="main-bg">
@@ -662,28 +607,28 @@
                 </div>
             </section>
 
-        </main>
+        </main> -->
 
-        <footer class="footer bg-bg-dark md:py-[60px] sm:py-[30px] py-[30px]">
-            <div class="container flex md:justify-between items-start justify-evenly md:flex-nowrap flex-wrap text-white">
-                <a href="/">
+        <footer class="footer bg-bg-dark md:py-[60px] sm:py-[30px] py-[30px] absolute bottom-0 w-full">
+            <div class="container flex md:justify-between items-start justify-start md:flex-nowrap gap-[30px] flex-wrap text-white">
+                <a class="md:w-auto w-full" href="/">
                     <img class="" src="./src/img/img/logo-footer.svg" alt="Logo">
                 </a>
-                <div>
+                <div class="md:order-1 order-3">
                     <ul class="flex flex-col">
-                        <li class="md:pb-[18px] pb-[9px] flex items-center gap-4">
+                        <li class="md:text-[18px] text-[12px] md:pb-[18px] pb-[9px] flex items-center gap-4">
                            г. Уссурийск, ул. Советскую, 149
                         </li>  
 
-                        <li class="md:pb-[18px] pb-[9px] flex items-center gap-4">
+                        <li class="md:text-[18px] text-[12px] md:pb-[18px] pb-[9px] flex items-center gap-4">
                             Пн-пт: с 9:00 до 18:00, СБ-ВС: ВЫХОДНОЙ
                          </li>  
 
                          <li class="md:pb-[18px] pb-[9px] flex items-center gap-4">
-                            <a href="tel:+79146504455," class="font-bold">
+                            <a href="tel:+79146504455," class="md:text-[18px] text-[12px] font-bold">
                                 +7 (914) 650 44 55,
                             </a> 
-                            <a href="tel:+79241204050" class="font-bold">
+                            <a href="tel:+79241204050" class="md:text-[18px] text-[12px] font-bold">
                                 +7 (924) 120 40 50
                             </a>                                
                          </li>  
@@ -693,7 +638,7 @@
                         </li>  
                     </ul>
                 </div>
-                <div>
+                <div class="md:order-0 order-1">
                
                     <ul class="text-gray md:text-base text-xs">
                         <li class="md:pb-[18px] pb-[9px]">
@@ -710,7 +655,7 @@
                         </li>  
                     </ul>
                 </div>
-                <div>
+                <div class="md:order-1 order-2">
                     <ul class="text-gray md:text-base text-xs">
                         <li class="md:pb-[18px] pb-[9px]">
                             Дизайн
@@ -729,7 +674,7 @@
             </div>
 
             <div class="container">
-                <div class="flex items-center justify-between text-gray pt-10">
+                <div class="flex md:flex-row flex-col md:items-center items-start gap-[10px] justify-between text-gray pt-10">
                         <div class="md:text-sm text-xs text-brown-dark">
                             © С3 Инвест Сити .Все права защищены
                         </div>
