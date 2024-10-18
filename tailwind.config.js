@@ -22,6 +22,8 @@ module.exports = {
       'biege': '#D7CDC9',
       'biege-dark': '#9E918C',
       'bg': '#E8E4E2',
+      'bg-dark': '#383737',
+
       
     
 

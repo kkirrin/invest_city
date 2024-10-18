@@ -1526,6 +1526,7 @@ html {
   scrollbar-width: thin;
   scrollbar-color: var(--brown-light) var(--biege);
   font-family: 'Involve';
+  overflow-x: hidden;
 }
 
 body {
@@ -1592,11 +1593,6 @@ h2, h3 {
   margin:  auto;
 }
 
-.my-10{
-  margin-top:  2.5rem;
-  margin-bottom:  2.5rem;
-}
-
 .mb-4{
   margin-bottom:  1rem;
 }
@@ -1651,10 +1647,6 @@ h2, h3 {
 
 .w-3{
   width:  0.75rem;
-}
-
-.w-44{
-  width:  11rem;
 }
 
 .w-6{
@@ -1715,6 +1707,10 @@ h2, h3 {
 
 .flex-wrap{
   flex-wrap:  wrap;
+}
+
+.items-start{
+  align-items:  flex-start;
 }
 
 .items-center{
@@ -1793,14 +1789,14 @@ h2, h3 {
   border-radius:  0.75rem;
 }
 
+.bg-bg-dark{
+  --tw-bg-opacity:  1;
+  background-color:  rgb(56 55 55 / var(--tw-bg-opacity));
+}
+
 .bg-biege{
   --tw-bg-opacity:  1;
   background-color:  rgb(215 205 201 / var(--tw-bg-opacity));
-}
-
-.bg-black{
-  --tw-bg-opacity:  1;
-  background-color:  rgb(57 61 70 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -1856,6 +1852,11 @@ h2, h3 {
   padding-bottom:  116px;
 }
 
+.py-\[30px\]{
+  padding-top:  30px;
+  padding-bottom:  30px;
+}
+
 .py-\[44px\]{
   padding-top:  44px;
   padding-bottom:  44px;
@@ -1883,6 +1884,10 @@ h2, h3 {
 
 .pb-\[75px\]{
   padding-bottom:  75px;
+}
+
+.pb-\[9px\]{
+  padding-bottom:  9px;
 }
 
 .pl-10{
@@ -2013,10 +2018,6 @@ h2, h3 {
 .text-white{
   --tw-text-opacity:  1;
   color:  rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.underline{
-  text-decoration-line:  underline;
 }
 
 .shadow-md{
@@ -2323,6 +2324,7 @@ h2, h3 {
 #location {
   padding: 60px 0;
   background-color: #383737;
+  overflow-x: hidden;
 }
 
 #location h2::before {
@@ -2338,6 +2340,16 @@ h2, h3 {
 #contacts {
   padding: 60px 0;
   background-color: #383737 ;
+}
+
+#contacts .container::before{
+  content: '';
+  max-width: 1440px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  height: 2px;
+  background-color: #57504A;
 }
 
 .custom__text--type {
@@ -2453,6 +2465,11 @@ header {
     width:  70x;
   }
 
+  .sm\:py-\[30px\]{
+    padding-top:  30px;
+    padding-bottom:  30px;
+  }
+
   .sm\:pb-\[30px\]{
     padding-bottom:  30px;
   }
@@ -2509,10 +2526,6 @@ header {
 
   .md\:h-\[389px\]{
     height:  389px;
-  }
-
-  .md\:w-60{
-    width:  15rem;
   }
 
   .md\:w-\[140px\]{
@@ -2573,8 +2586,17 @@ header {
     padding-bottom:  116px;
   }
 
+  .md\:py-\[60px\]{
+    padding-top:  60px;
+    padding-bottom:  60px;
+  }
+
   .md\:pb-\[100px\]{
     padding-bottom:  100px;
+  }
+
+  .md\:pb-\[18px\]{
+    padding-bottom:  18px;
   }
 
   .md\:pb-\[60px\]{

@@ -61,6 +61,7 @@
         scrollbar-width: thin;
         scrollbar-color: var(--brown-light) var(--biege);
         font-family: 'Involve';
+        overflow-x: hidden;
     }
 
     body {
@@ -339,6 +340,7 @@
 #location {
     padding: 60px 0;
     background-color: #383737;
+    overflow-x: hidden;
 }
 
 #location h2::before {
@@ -355,6 +357,18 @@
     padding: 60px 0;
     background-color: #383737 ;
 }
+
+#contacts .container::before{
+    content: '';
+    max-width: 1440px;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 2px;
+    background-color: #57504A;
+}
+
+
 
 
 .custom__text--type {
