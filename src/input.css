@@ -150,7 +150,7 @@
 
 .pattern_6 {
     position: absolute;
-    top: -45%;
+    top: -25%;
     left: 0;
     z-index: 0;
 }
@@ -164,10 +164,12 @@
 
 .pattern_8 {
     position: absolute;
-    top: -40%;
+    top: -22%;
     left: -90px;
     scale: 1.4;
     z-index: 3;
+    width: 23.9%;
+    height: 70px;
 }
 
 .pattern_9 {
@@ -290,7 +292,7 @@
 }
 
 #type {
-    padding: 120px 0;
+    padding: 60px;
 }
 
 #type h2::before {
@@ -322,7 +324,7 @@
     position: relative;
     font-weight: 700;
     color: white;
-    font-size: clamp(1.125rem, 1.125vw + 0.9rem, 2rem);
+    font-size: clamp(1.125rem, 0.125vw + 0.9rem, 2rem);
     font-family: 'Bahnschrift';
     text-transform: uppercase;
 }
@@ -478,13 +480,71 @@ header {
         height: 250px;
         width: 82px;
     }
+    .pattern_4 {
+        top: 6%;
+        width: 150px;
+        height: 300px;
+    }
+    .pattern_5 {
+        width: 150px;
+        height: 300px;
+        right: 0;
+    }
+    .pattern_6 {
+        width: 130px;
+        height: 120px;
+        left: 0;
+        top: 0;
+    }
+    .pattern_7 {
+        display: none;
+    }
+    .pattern_8{
+        width: 110px;
+        height: 40px;
+        left: 0;
+        top: -48px;
+    }
+    .pattern_9 {
+        width: 180px;
+        height: 300px;
+
+    }
+    
     #architecture {
-        padding: 30px 0px 60px 0;
+        padding: 0px 0px 60px 0;
+    }
+    #architecture .img-wrapper {
+        height: 200px;
+        width: 100%;
+    }
+
+    #architecture .img-wrapper img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     h2, h3 {
         font-family: 'Bahnschrift';
         line-height: 33px;
+    }
+
+    #all_for_comfort {
+        padding: 30px 0px 60px 0;
+        position: relative;
+    }
+    #type {
+        padding: 0px;
+    }
+    #programs {
+        padding: 0px 0px 60px 0;
+    }
+    #location iframe {
+        height: 70vh;
+    }
+    .custom__text--contacts {
+       height: 66px;
     }
 
 }

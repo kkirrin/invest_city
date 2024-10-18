@@ -3,6 +3,7 @@ import { initPopup } from './module/popup.js';
 import { initProgrammSlider } from './module/sliders.js';
 import { initHorizontalScroll } from './module/horizontalScroll.js';
 import { initCounterAnimation } from './module/counter-animation.js';
+import { initAllComfortSlider } from './module/sliders.js';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -13,6 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initProgrammSlider();
     initHorizontalScroll();
     initCounterAnimation();
+    initAllComfortSlider();
 
     const wow = new WOW({
         boxClass: 'wow',

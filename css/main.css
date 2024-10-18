@@ -661,7 +661,7 @@ div.vertical__line::before {
   top: 0;
   left: 50%;
   transform: translate(-50%, 0%);
-  width: 200px;
+  width: 300px;
   height: calc(100% + 0px);
   background-color: var(--bg);
   transition: all 0.2s ease-in-out;
@@ -762,6 +762,10 @@ div.vertical__line::before {
     max-width: 471px;
     width: -webkit-fill-available;
     padding: 13px;
+  }
+
+  .button_main.button_main__podrobnee {
+    padding: 15px 70px;
   }
 }
 
@@ -1118,6 +1122,22 @@ div.vertical__line::before {
 
 .ff10 {
   --float-factor: 1;
+}
+
+@media screen and (max-width: 480px) {
+  .ff5 {
+    --float-factor: 0.1;
+  }
+
+  .floating {
+    --float-range: 3vh;
+    --float-factor: 1;
+    --float-start: calc( var(--float-factor) * var(--float-range) );
+    --float-end: calc( -1 * var(--float-factor) * var(--float-range) );
+    animation: floating forwards ease-in-out;
+    animation-timeline: view();
+    animation-reveal: entry-crossing 50% exit-crossing 100%;
+  }
 }
 
 /* Импорт TailWind */
@@ -1740,12 +1760,20 @@ h2, h3 {
   position: relative;
 }
 
-.bottom-0{
-  bottom: 0px;
-}
-
 .bottom-\[20px\]{
   bottom: 20px;
+}
+
+.right-\[0\%\]{
+  right: 0%;
+}
+
+.top-\[50\%\]{
+  top: 50%;
+}
+
+.top-\[56\%\]{
+  top: 56%;
 }
 
 .z-\[2\]{
@@ -1766,10 +1794,6 @@ h2, h3 {
 
 .m-auto{
   margin: auto;
-}
-
-.m-0{
-  margin: 0px;
 }
 
 .mb-4{
@@ -1820,10 +1844,6 @@ h2, h3 {
   height: 311px;
 }
 
-.h-\[430px\]{
-  height: 430px;
-}
-
 .h-full{
   height: 100%;
 }
@@ -1852,16 +1872,20 @@ h2, h3 {
   width: 100%;
 }
 
+.max-w-\[250px\]{
+  max-width: 250px;
+}
+
 .max-w-\[260px\]{
   max-width: 260px;
 }
 
-.max-w-\[400px\]{
-  max-width: 400px;
+.max-w-\[280px\]{
+  max-width: 280px;
 }
 
-.max-w-\[467px\]{
-  max-width: 467px;
+.max-w-\[400px\]{
+  max-width: 400px;
 }
 
 .max-w-\[666px\]{
@@ -1878,14 +1902,6 @@ h2, h3 {
 
 .max-w-full{
   max-width: 100%;
-}
-
-.max-w-\[200px\]{
-  max-width: 200px;
-}
-
-.max-w-\[250px\]{
-  max-width: 250px;
 }
 
 .transform{
@@ -1906,6 +1922,10 @@ h2, h3 {
 
 .items-start{
   align-items: flex-start;
+}
+
+.items-end{
+  align-items: flex-end;
 }
 
 .items-center{
@@ -1944,6 +1964,10 @@ h2, h3 {
   gap: 12px;
 }
 
+.gap-\[15px\]{
+  gap: 15px;
+}
+
 .gap-\[20px\]{
   gap: 20px;
 }
@@ -1958,10 +1982,6 @@ h2, h3 {
 
 .gap-\[50px\]{
   gap: 50px;
-}
-
-.gap-\[76px\]{
-  gap: 76px;
 }
 
 .overflow-hidden{
@@ -2005,24 +2025,14 @@ h2, h3 {
   padding-right: 1rem;
 }
 
-.px-\[44px\]{
-  padding-left: 44px;
-  padding-right: 44px;
-}
-
-.px-\[60px\]{
-  padding-left: 60px;
-  padding-right: 60px;
+.px-\[30px\]{
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .py-1{
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
-}
-
-.py-\[116px\]{
-  padding-top: 116px;
-  padding-bottom: 116px;
 }
 
 .py-\[30px\]{
@@ -2087,6 +2097,10 @@ h2, h3 {
   padding-top: 22px;
 }
 
+.pt-\[25px\]{
+  padding-top: 25px;
+}
+
 .pt-\[30px\]{
   padding-top: 30px;
 }
@@ -2119,6 +2133,10 @@ h2, h3 {
   font-size: 16px;
 }
 
+.text-\[18px\]{
+  font-size: 18px;
+}
+
 .text-\[20px\]{
   font-size: 20px;
 }
@@ -2136,8 +2154,8 @@ h2, h3 {
   line-height: 1rem;
 }
 
-.text-\[18px\]{
-  font-size: 18px;
+.text-\[10px\]{
+  font-size: 10px;
 }
 
 .font-bold{
@@ -2300,7 +2318,7 @@ h2, h3 {
 
 .pattern_6 {
   position: absolute;
-  top: -45%;
+  top: -25%;
   left: 0;
   z-index: 0;
 }
@@ -2314,10 +2332,12 @@ h2, h3 {
 
 .pattern_8 {
   position: absolute;
-  top: -40%;
+  top: -22%;
   left: -90px;
   scale: 1.4;
   z-index: 3;
+  width: 23.9%;
+  height: 70px;
 }
 
 .pattern_9 {
@@ -2429,7 +2449,7 @@ h2, h3 {
 }
 
 #type {
-  padding: 120px 0;
+  padding: 60px;
 }
 
 #type h2::before {
@@ -2461,7 +2481,7 @@ h2, h3 {
   position: relative;
   font-weight: 700;
   color: white;
-  font-size: clamp(1.125rem, 1.125vw + 0.9rem, 2rem);
+  font-size: clamp(1.125rem, 0.125vw + 0.9rem, 2rem);
   font-family: 'Bahnschrift';
   text-transform: uppercase;
 }
@@ -2617,13 +2637,81 @@ header {
     width: 82px;
   }
 
+  .pattern_4 {
+    top: 6%;
+    width: 150px;
+    height: 300px;
+  }
+
+  .pattern_5 {
+    width: 150px;
+    height: 300px;
+    right: 0;
+  }
+
+  .pattern_6 {
+    width: 130px;
+    height: 120px;
+    left: 0;
+    top: 0;
+  }
+
+  .pattern_7 {
+    display: none;
+  }
+
+  .pattern_8{
+    width: 110px;
+    height: 40px;
+    left: 0;
+    top: -48px;
+  }
+
+  .pattern_9 {
+    width: 180px;
+    height: 300px;
+  }
+
   #architecture {
-    padding: 30px 0px 60px 0;
+    padding: 0px 0px 60px 0;
+  }
+
+  #architecture .img-wrapper {
+    height: 200px;
+    width: 100%;
+  }
+
+  #architecture .img-wrapper img{
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 
   h2, h3 {
     font-family: 'Bahnschrift';
     line-height: 33px;
+  }
+
+  #all_for_comfort {
+    padding: 30px 0px 60px 0;
+    position: relative;
+  }
+
+  #type {
+    padding: 0px;
+  }
+
+  #programs {
+    padding: 0px 0px 60px 0;
+  }
+
+  #location iframe {
+    height: 70vh;
+  }
+
+  .custom__text--contacts {
+    height: 66px;
   }
 }
 
@@ -2687,6 +2775,14 @@ header {
     order: 2;
   }
 
+  .md\:order-3{
+    order: 3;
+  }
+
+  .md\:block{
+    display: block;
+  }
+
   .md\:flex{
     display: flex;
   }
@@ -2697,6 +2793,10 @@ header {
 
   .md\:h-\[389px\]{
     height: 389px;
+  }
+
+  .md\:h-\[430px\]{
+    height: 430px;
   }
 
   .md\:w-\[140px\]{
@@ -2713,6 +2813,14 @@ header {
 
   .md\:max-w-\[466px\]{
     max-width: 466px;
+  }
+
+  .md\:max-w-\[467px\]{
+    max-width: 467px;
+  }
+
+  .md\:max-w-\[560px\]{
+    max-width: 560px;
   }
 
   .md\:grid-cols-3{
@@ -2743,17 +2851,33 @@ header {
     gap: 1.25rem;
   }
 
+  .md\:gap-\[30px\]{
+    gap: 30px;
+  }
+
   .md\:gap-\[75\]{
     gap: 75;
+  }
+
+  .md\:gap-\[76px\]{
+    gap: 76px;
+  }
+
+  .md\:gap-\[50px\]{
+    gap: 50px;
+  }
+
+  .md\:gap-\[40px\]{
+    gap: 40px;
   }
 
   .md\:p-\[110px\]{
     padding: 110px;
   }
 
-  .md\:px-\[60px\]{
-    padding-left: 60px;
-    padding-right: 60px;
+  .md\:px-\[30px\]{
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .md\:py-\[116px\]{
