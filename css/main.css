@@ -521,6 +521,10 @@
   transition: all 0.4s ease-in-out;
 }
 
+.circle__wrapper .circle__btn.circle__btn--contacts {
+  background-color: var(--brown-custom);
+}
+
 .circle__wrapper button:hover {
   background-color: var(--biege);
   color: var(--brown-light);
@@ -963,7 +967,115 @@
 
 /* Импорт TailWind */
 
-/* ! tailwindcss v3.3.6 | MIT License | https://tailwindcss.com */
+*, ::before, ::after{
+  --tw-border-spacing-x:  0;
+  --tw-border-spacing-y:  0;
+  --tw-translate-x:  0;
+  --tw-translate-y:  0;
+  --tw-rotate:  0;
+  --tw-skew-x:  0;
+  --tw-skew-y:  0;
+  --tw-scale-x:  1;
+  --tw-scale-y:  1;
+  --tw-pan-x:   ;
+  --tw-pan-y:   ;
+  --tw-pinch-zoom:   ;
+  --tw-scroll-snap-strictness:  proximity;
+  --tw-gradient-from-position:   ;
+  --tw-gradient-via-position:   ;
+  --tw-gradient-to-position:   ;
+  --tw-ordinal:   ;
+  --tw-slashed-zero:   ;
+  --tw-numeric-figure:   ;
+  --tw-numeric-spacing:   ;
+  --tw-numeric-fraction:   ;
+  --tw-ring-inset:   ;
+  --tw-ring-offset-width:  0px;
+  --tw-ring-offset-color:  #fff;
+  --tw-ring-color:  rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow:  0 0 #0000;
+  --tw-ring-shadow:  0 0 #0000;
+  --tw-shadow:  0 0 #0000;
+  --tw-shadow-colored:  0 0 #0000;
+  --tw-blur:   ;
+  --tw-brightness:   ;
+  --tw-contrast:   ;
+  --tw-grayscale:   ;
+  --tw-hue-rotate:   ;
+  --tw-invert:   ;
+  --tw-saturate:   ;
+  --tw-sepia:   ;
+  --tw-drop-shadow:   ;
+  --tw-backdrop-blur:   ;
+  --tw-backdrop-brightness:   ;
+  --tw-backdrop-contrast:   ;
+  --tw-backdrop-grayscale:   ;
+  --tw-backdrop-hue-rotate:   ;
+  --tw-backdrop-invert:   ;
+  --tw-backdrop-opacity:   ;
+  --tw-backdrop-saturate:   ;
+  --tw-backdrop-sepia:   ;
+  --tw-contain-size:   ;
+  --tw-contain-layout:   ;
+  --tw-contain-paint:   ;
+  --tw-contain-style:   ;
+}
+
+::backdrop{
+  --tw-border-spacing-x:  0;
+  --tw-border-spacing-y:  0;
+  --tw-translate-x:  0;
+  --tw-translate-y:  0;
+  --tw-rotate:  0;
+  --tw-skew-x:  0;
+  --tw-skew-y:  0;
+  --tw-scale-x:  1;
+  --tw-scale-y:  1;
+  --tw-pan-x:   ;
+  --tw-pan-y:   ;
+  --tw-pinch-zoom:   ;
+  --tw-scroll-snap-strictness:  proximity;
+  --tw-gradient-from-position:   ;
+  --tw-gradient-via-position:   ;
+  --tw-gradient-to-position:   ;
+  --tw-ordinal:   ;
+  --tw-slashed-zero:   ;
+  --tw-numeric-figure:   ;
+  --tw-numeric-spacing:   ;
+  --tw-numeric-fraction:   ;
+  --tw-ring-inset:   ;
+  --tw-ring-offset-width:  0px;
+  --tw-ring-offset-color:  #fff;
+  --tw-ring-color:  rgb(59 130 246 / 0.5);
+  --tw-ring-offset-shadow:  0 0 #0000;
+  --tw-ring-shadow:  0 0 #0000;
+  --tw-shadow:  0 0 #0000;
+  --tw-shadow-colored:  0 0 #0000;
+  --tw-blur:   ;
+  --tw-brightness:   ;
+  --tw-contrast:   ;
+  --tw-grayscale:   ;
+  --tw-hue-rotate:   ;
+  --tw-invert:   ;
+  --tw-saturate:   ;
+  --tw-sepia:   ;
+  --tw-drop-shadow:   ;
+  --tw-backdrop-blur:   ;
+  --tw-backdrop-brightness:   ;
+  --tw-backdrop-contrast:   ;
+  --tw-backdrop-grayscale:   ;
+  --tw-backdrop-hue-rotate:   ;
+  --tw-backdrop-invert:   ;
+  --tw-backdrop-opacity:   ;
+  --tw-backdrop-saturate:   ;
+  --tw-backdrop-sepia:   ;
+  --tw-contain-size:   ;
+  --tw-contain-layout:   ;
+  --tw-contain-paint:   ;
+  --tw-contain-style:   ;
+}
+
+/* ! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -995,9 +1107,11 @@
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
+7. Disable tap highlights on iOS
 */
 
-html {
+html,
+:host {
   line-height: 1.5;
   /* 1 */
   -webkit-text-size-adjust: 100%;
@@ -1007,12 +1121,14 @@ html {
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
   font-variation-settings: normal;
   /* 6 */
+  -webkit-tap-highlight-color: transparent;
+  /* 7 */
 }
 
 /*
@@ -1170,6 +1286,8 @@ textarea {
   /* 1 */
   line-height: inherit;
   /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
   color: inherit;
   /* 1 */
   margin: 0;
@@ -1193,9 +1311,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -1399,7 +1517,7 @@ video {
 
 /* Make elements with the HTML hidden attribute stay hidden by default */
 
-[hidden] {
+[hidden]:where(:not([hidden="until-found"])) {
   display: none;
 }
 
@@ -1420,106 +1538,6 @@ body {
 h2, h3 {
   font-family: 'Bahnschrift';
   line-height: 85px;
-}
-
-*, ::before, ::after{
-  --tw-border-spacing-x:  0;
-  --tw-border-spacing-y:  0;
-  --tw-translate-x:  0;
-  --tw-translate-y:  0;
-  --tw-rotate:  0;
-  --tw-skew-x:  0;
-  --tw-skew-y:  0;
-  --tw-scale-x:  1;
-  --tw-scale-y:  1;
-  --tw-pan-x:   ;
-  --tw-pan-y:   ;
-  --tw-pinch-zoom:   ;
-  --tw-scroll-snap-strictness:  proximity;
-  --tw-gradient-from-position:   ;
-  --tw-gradient-via-position:   ;
-  --tw-gradient-to-position:   ;
-  --tw-ordinal:   ;
-  --tw-slashed-zero:   ;
-  --tw-numeric-figure:   ;
-  --tw-numeric-spacing:   ;
-  --tw-numeric-fraction:   ;
-  --tw-ring-inset:   ;
-  --tw-ring-offset-width:  0px;
-  --tw-ring-offset-color:  #fff;
-  --tw-ring-color:  rgb(59 130 246 / 0.5);
-  --tw-ring-offset-shadow:  0 0 #0000;
-  --tw-ring-shadow:  0 0 #0000;
-  --tw-shadow:  0 0 #0000;
-  --tw-shadow-colored:  0 0 #0000;
-  --tw-blur:   ;
-  --tw-brightness:   ;
-  --tw-contrast:   ;
-  --tw-grayscale:   ;
-  --tw-hue-rotate:   ;
-  --tw-invert:   ;
-  --tw-saturate:   ;
-  --tw-sepia:   ;
-  --tw-drop-shadow:   ;
-  --tw-backdrop-blur:   ;
-  --tw-backdrop-brightness:   ;
-  --tw-backdrop-contrast:   ;
-  --tw-backdrop-grayscale:   ;
-  --tw-backdrop-hue-rotate:   ;
-  --tw-backdrop-invert:   ;
-  --tw-backdrop-opacity:   ;
-  --tw-backdrop-saturate:   ;
-  --tw-backdrop-sepia:   ;
-}
-
-::backdrop{
-  --tw-border-spacing-x:  0;
-  --tw-border-spacing-y:  0;
-  --tw-translate-x:  0;
-  --tw-translate-y:  0;
-  --tw-rotate:  0;
-  --tw-skew-x:  0;
-  --tw-skew-y:  0;
-  --tw-scale-x:  1;
-  --tw-scale-y:  1;
-  --tw-pan-x:   ;
-  --tw-pan-y:   ;
-  --tw-pinch-zoom:   ;
-  --tw-scroll-snap-strictness:  proximity;
-  --tw-gradient-from-position:   ;
-  --tw-gradient-via-position:   ;
-  --tw-gradient-to-position:   ;
-  --tw-ordinal:   ;
-  --tw-slashed-zero:   ;
-  --tw-numeric-figure:   ;
-  --tw-numeric-spacing:   ;
-  --tw-numeric-fraction:   ;
-  --tw-ring-inset:   ;
-  --tw-ring-offset-width:  0px;
-  --tw-ring-offset-color:  #fff;
-  --tw-ring-color:  rgb(59 130 246 / 0.5);
-  --tw-ring-offset-shadow:  0 0 #0000;
-  --tw-ring-shadow:  0 0 #0000;
-  --tw-shadow:  0 0 #0000;
-  --tw-shadow-colored:  0 0 #0000;
-  --tw-blur:   ;
-  --tw-brightness:   ;
-  --tw-contrast:   ;
-  --tw-grayscale:   ;
-  --tw-hue-rotate:   ;
-  --tw-invert:   ;
-  --tw-saturate:   ;
-  --tw-sepia:   ;
-  --tw-drop-shadow:   ;
-  --tw-backdrop-blur:   ;
-  --tw-backdrop-brightness:   ;
-  --tw-backdrop-contrast:   ;
-  --tw-backdrop-grayscale:   ;
-  --tw-backdrop-hue-rotate:   ;
-  --tw-backdrop-invert:   ;
-  --tw-backdrop-opacity:   ;
-  --tw-backdrop-saturate:   ;
-  --tw-backdrop-sepia:   ;
 }
 
 .container{
@@ -1657,6 +1675,10 @@ h2, h3 {
 
 .max-w-\[400px\]{
   max-width:  400px;
+}
+
+.max-w-\[467px\]{
+  max-width:  467px;
 }
 
 .max-w-\[666px\]{
@@ -2074,8 +2096,7 @@ h2, h3 {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -2141,6 +2162,14 @@ h2, h3 {
   left: -90px;
   scale: 1.4;
   z-index: 3;
+}
+
+.pattern_9 {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  scale: 1.4;
+  z-index: 1;
 }
 
 .main__svg {
@@ -2229,7 +2258,7 @@ h2, h3 {
 #variants {
   position: relative;
   background: #383737;
-  padding: 60px 0;
+  padding: 120px 0;
 }
 
 #variants .container::after {
@@ -2311,6 +2340,27 @@ h2, h3 {
   background-color: #383737 ;
 }
 
+.custom__text--type {
+  text-align: center;
+  padding: 30px 0;
+  position: relative;
+  z-index: 6;
+  border: 1px solid #756B63;
+}
+
+.custom__text--type::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: -2px;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 90%;
+  height: calc(100% + 4px);
+  background-color: #383737;
+  transition: all 0.2s ease-in-out;
+}
+
 .custom__text {
   position: relative;
   z-index: 1;
@@ -2322,18 +2372,19 @@ h2, h3 {
 }
 
 .custom__text--contacts {
+  padding: 10px 30px;
   border: 1px solid #57504A;
-  z-index: 1;
+  z-index: 4;
 }
 
 .custom__text--contacts::before {
   content: '';
   position: absolute;
-  z-index: 0;
+  z-index: -1;
   top: -2px;
   left: 50%;
   transform: translate(-50%, 0%);
-  width: 200px;
+  width: 80%;
   height: calc(100% + 4px);
   background-color: #383737;
   transition: all 0.2s ease-in-out;
@@ -2548,6 +2599,10 @@ header {
 
   .md\:pt-\[60px\]{
     padding-top:  60px;
+  }
+
+  .md\:text-\[18px\]{
+    font-size:  18px;
   }
 
   .md\:text-\[20px\]{

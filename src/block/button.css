@@ -11,6 +11,10 @@
     transition: all 0.4s ease-in-out;
 }
 
+.circle__wrapper .circle__btn.circle__btn--contacts {
+    background-color: var(--brown-custom);
+}
+
 .circle__wrapper button:hover {
     background-color: var(--biege);
     color: var(--brown-light);
