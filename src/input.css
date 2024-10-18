@@ -116,7 +116,7 @@
 
 .pattern_1 {
     position: absolute;
-    top: -50px;
+    top: 50px;
     right: -250px;
     z-index: 1;
 }
@@ -449,23 +449,34 @@ header {
     }
     
     #map_img {
+        background-attachment: inherit;
+        width: -webkit-fill-available;
+        padding: 30px 0;
+        height: 50vh;
         background-image: url('../src/img/img/map-s.png');
-       
+        background-size: contain;
+        background-position: center;
     }
     .pattern_1 {
         position: absolute;
-        top: -50px;
-        right: -0px;
+        top: 30px;
+        right: 0px;
         z-index: 1;
+        scale: 1;
+        width: 150px;
+    }
+    .pattern_2 {
+        width: 300px;
+        height: 82px;
+        top: 27%;
     }
     .pattern_3 {
         position: absolute;
-        top: 0px;
+        top: -2.8%;
         left: -0px;
         z-index: 1;
-    }
-    #map_img {
-        height: 100%;
+        height: 250px;
+        width: 82px;
     }
     #architecture {
         padding: 30px 0px 60px 0;

@@ -4,6 +4,20 @@
     padding-top: 200px;
 }
 
+.main-section__wrapper .main__desc {
+    position: relative;
+}
+
+.main-section__wrapper .main__desc::before {
+    position: absolute;
+    content: '';
+    height: 53px;
+    background: var(--white);
+    width: 1px;
+    bottom: -60%;
+}
+
+
 .main-section__wrapper div:first-of-type {
     max-width: 500px;
     display: flex;
@@ -37,7 +51,7 @@
     font-family: 'Bahnschrift';
     font-weight: 700;
     text-transform: uppercase;
-    font-size: clamp(3.125rem, 4.375vw + 2.25rem, 7.5rem);
+    font-size: clamp(3.125rem, 3.375vw + 2.25rem, 7.5rem);
     line-height: 120px;
 }
 
@@ -55,5 +69,26 @@
 @media screen and (max-width: 480px) {
     .main-section__wrapper {
         flex-direction: column;
+
+    }
+    .main-section__wrapper div:first-of-type {
+        gap: 0px;
+    }
+    .main-section__wrapper .main__title {
+        line-height: 51px;
+    }
+    .main-section__wrapper .main__desc::before {
+        position: absolute;
+        content: '';
+        height: 30px;
+        background: var(--white);
+        width: 1px;
+        bottom: -50%;
     }
 } 
+
+@media screen and (max-width: 375px) {
+    .main-section__wrapper .main__title {
+        line-height: 51px;
+    }
+}

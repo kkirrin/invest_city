@@ -358,6 +358,19 @@ div.vertical__line::before {
   padding-top: 200px;
 }
 
+.main-section__wrapper .main__desc {
+  position: relative;
+}
+
+.main-section__wrapper .main__desc::before {
+  position: absolute;
+  content: '';
+  height: 53px;
+  background: var(--white);
+  width: 1px;
+  bottom: -60%;
+}
+
 .main-section__wrapper div:first-of-type {
   max-width: 500px;
   display: flex;
@@ -391,7 +404,7 @@ div.vertical__line::before {
   font-family: 'Bahnschrift';
   font-weight: 700;
   text-transform: uppercase;
-  font-size: clamp(3.125rem, 4.375vw + 2.25rem, 7.5rem);
+  font-size: clamp(3.125rem, 3.375vw + 2.25rem, 7.5rem);
   line-height: 120px;
 }
 
@@ -408,6 +421,29 @@ div.vertical__line::before {
 @media screen and (max-width: 480px) {
   .main-section__wrapper {
     flex-direction: column;
+  }
+
+  .main-section__wrapper div:first-of-type {
+    gap: 0px;
+  }
+
+  .main-section__wrapper .main__title {
+    line-height: 51px;
+  }
+
+  .main-section__wrapper .main__desc::before {
+    position: absolute;
+    content: '';
+    height: 30px;
+    background: var(--white);
+    width: 1px;
+    bottom: -50%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .main-section__wrapper .main__title {
+    line-height: 51px;
   }
 }
 
@@ -704,6 +740,11 @@ div.vertical__line::before {
 }
 
 @media screen and (max-width: 480px) {
+  .main-section__wrapper .circle__wrapper {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
   .circle__wrapper button.button-popup {
     position: relative;
     bottom: 0;
@@ -724,6 +765,12 @@ div.vertical__line::before {
   }
 }
 
+@media screen and (max-width: 375px) {
+  .button_main {
+    padding: 15px 45px;
+  }
+}
+
 #info-section-1 {
   background-color: var(--bg);
   padding: 140px 0px;
@@ -738,6 +785,20 @@ div.vertical__line::before {
 
 #info-section-1 .container {
   position: relative;
+}
+
+#info-section-1 h2 {
+  position: relative;
+  text-transform: uppercase;
+}
+
+#info-section-1 h2::before {
+  position: absolute;
+  content: '';
+  height: 40px;
+  background: var(--brown-light);
+  width: 1px;
+  bottom: -40%;
 }
 
 #info-section-1 .container::after {
@@ -824,8 +885,17 @@ div.vertical__line::before {
   .info-section-list li p:first-of-type {
     font-size: 50px;
     line-height: 24px;
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     font-weight: bold;
+  }
+
+  .info-section-list li {
+    max-width: auto;
+    height: 169px;
+  }
+
+  #info-section-1 {
+    padding: 60px 0;
   }
 
   .info-section-list {
@@ -833,6 +903,41 @@ div.vertical__line::before {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
     padding-bottom: 60px;
+  }
+
+  #info-section-1 h2::before {
+    position: absolute;
+    content: '';
+    height: 40px;
+    background: var(--brown-light);
+    width: 1px;
+    bottom: -80%;
+  }
+
+  #info-section-1 .container::after {
+    content: '';
+    position: absolute;
+    width: -webkit-fill-available;
+    bottom: -60px;
+    left: 0;
+    height: 2px;
+    background-color: var(--biege);
+  }
+
+  #info-section-3 svg {
+    max-height: 480px;
+  }
+
+  #info-section-3 svg image{
+    height: 100%;
+  }
+
+  .info-section-list li p:nth-child(2) {
+    font-size: 16px;
+  }
+
+  .info-section-list li div {
+    height: 50px;
   }
 }
 
@@ -923,7 +1028,14 @@ div.vertical__line::before {
 
 @media screen and (max-width: 480px) {
   #ticker {
-    padding: 40px 0;
+    padding: 60px 0;
+  }
+
+  .ticker__item::before {
+    top: 38%;
+    left: -5%;
+    height: 10px;
+    width: 10px;
   }
 }
 
@@ -1632,6 +1744,10 @@ h2, h3 {
   bottom: 0px;
 }
 
+.bottom-\[20px\]{
+  bottom: 20px;
+}
+
 .z-\[2\]{
   z-index: 2;
 }
@@ -1640,16 +1756,20 @@ h2, h3 {
   order: 1;
 }
 
-.order-3{
-  order: 3;
-}
-
 .order-2{
   order: 2;
 }
 
+.order-3{
+  order: 3;
+}
+
 .m-auto{
   margin: auto;
+}
+
+.m-0{
+  margin: 0px;
 }
 
 .mb-4{
@@ -1666,6 +1786,10 @@ h2, h3 {
 
 .mt-\[30px\]{
   margin-top: 30px;
+}
+
+.block{
+  display: block;
 }
 
 .flex{
@@ -1756,6 +1880,14 @@ h2, h3 {
   max-width: 100%;
 }
 
+.max-w-\[200px\]{
+  max-width: 200px;
+}
+
+.max-w-\[250px\]{
+  max-width: 250px;
+}
+
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -1788,12 +1920,12 @@ h2, h3 {
   justify-content: flex-start;
 }
 
-.justify-between{
-  justify-content: space-between;
+.justify-center{
+  justify-content: center;
 }
 
-.justify-evenly{
-  justify-content: space-evenly;
+.justify-between{
+  justify-content: space-between;
 }
 
 .gap-2{
@@ -1907,10 +2039,6 @@ h2, h3 {
   padding-bottom: 30px;
 }
 
-.pb-\[40px\]{
-  padding-bottom: 40px;
-}
-
 .pb-\[75px\]{
   padding-bottom: 75px;
 }
@@ -1933,6 +2061,10 @@ h2, h3 {
 
 .pt-10{
   padding-top: 2.5rem;
+}
+
+.pt-\[0px\]{
+  padding-top: 0px;
 }
 
 .pt-\[10px\]{
@@ -2002,6 +2134,10 @@ h2, h3 {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[18px\]{
+  font-size: 18px;
 }
 
 .font-bold{
@@ -2129,7 +2265,7 @@ h2, h3 {
 
 .pattern_1 {
   position: absolute;
-  top: -50px;
+  top: 50px;
   right: -250px;
   z-index: 1;
 }
@@ -2448,25 +2584,37 @@ header {
   }
 
   #map_img {
+    background-attachment: inherit;
+    width: -webkit-fill-available;
+    padding: 30px 0;
+    height: 50vh;
     background-image: url('../src/img/img/map-s.png');
+    background-size: contain;
+    background-position: center;
   }
 
   .pattern_1 {
     position: absolute;
-    top: -50px;
-    right: -0px;
+    top: 30px;
+    right: 0px;
     z-index: 1;
+    scale: 1;
+    width: 150px;
+  }
+
+  .pattern_2 {
+    width: 300px;
+    height: 82px;
+    top: 27%;
   }
 
   .pattern_3 {
     position: absolute;
-    top: 0px;
+    top: -2.8%;
     left: -0px;
     z-index: 1;
-  }
-
-  #map_img {
-    height: 100%;
+    height: 250px;
+    width: 82px;
   }
 
   #architecture {
@@ -2531,16 +2679,12 @@ header {
 }
 
 @media (min-width: 1024px){
-  .md\:order-2{
-    order: 2;
-  }
-
   .md\:order-1{
     order: 1;
   }
 
-  .md\:order-10{
-    order: 10;
+  .md\:order-2{
+    order: 2;
   }
 
   .md\:flex{
@@ -2622,6 +2766,10 @@ header {
     padding-bottom: 60px;
   }
 
+  .md\:pb-\[0\]{
+    padding-bottom: 0;
+  }
+
   .md\:pb-\[100px\]{
     padding-bottom: 100px;
   }
@@ -2698,10 +2846,6 @@ header {
   .md\:text-sm{
     font-size: 0.875rem;
     line-height: 1.25rem;
-  }
-
-  .md\:text-\[\]{
-    color: ;
   }
 }
 
