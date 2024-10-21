@@ -686,6 +686,17 @@ div.vertical__line::before {
   transition: all 0.4s ease-in-out;
 }
 
+.button_main.button_main--pdf {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-weight: 700;
+  background-color: inherit;
+  border: 1px solid var(--brown-light);
+  color: var(--brown-light);
+}
+
 .button_main:hover {
   background-color: var(--biege);
   color: var(--brown-light);
@@ -735,6 +746,10 @@ div.vertical__line::before {
   stroke: var(--biege);
 }
 
+.button_main--bron {
+  font-size: 18px;
+}
+
 .program-slide-next:active svg path{
   fill:  var(--biege);
 }
@@ -766,6 +781,11 @@ div.vertical__line::before {
 
   .button_main.button_main__podrobnee {
     padding: 15px 70px;
+  }
+
+  .button_main--bron {
+    padding: 15px;
+    font-size: 12px;
   }
 }
 
@@ -2584,7 +2604,7 @@ h2, h3 {
 }
 
 #single-block-section {
-  padding: 120px 0;
+  padding: 120px 0 60px 0;
 }
 
 nav.single-block ul {
@@ -2824,6 +2844,20 @@ header {
   .info__map ul {
     margin-bottom: 5px;
   }
+
+  nav.single-block ul li button {
+    font-size: 18px;
+    padding: 15px 10px;
+  }
+
+  nav.single-block ul li button.active {
+    font-size: 18px;
+    padding: 15px 10px;
+  }
+
+  #single-block-section {
+    padding: 90px 0px 30px 0;
+  }
 }
 
 @media (min-width: 768px){
@@ -2916,6 +2950,10 @@ header {
 
   .md\:w-\[140px\]{
     width: 140px;
+  }
+
+  .md\:w-\[50\%\]{
+    width: 50%;
   }
 
   .md\:w-auto{
