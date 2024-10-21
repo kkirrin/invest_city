@@ -539,6 +539,24 @@ nav.single-block ul li button.active{
 
 }
 
+.svg__main__wrapper svg{
+    width: 1920px;
+}
+
+.svg__main__wrapper svg g.main-g {
+    transition: all .5s ease-in-out;
+}
+
+.svg__main__wrapper svg g.main-g:hover use:first-of-type{
+    fill: var(--biege);
+}
+
+.svg__main__wrapper svg g.main-g:hover use:not(:first){
+    fill: var(--brown-light);
+}
+
+
+
 header {
     position: fixed;
     width: -webkit-fill-available;
@@ -685,6 +703,13 @@ header {
     #single-block-section {
         padding: 90px 0px 30px 0;
     }
+    .svg__main__wrapper {
+        overflow-x: auto;
+    }
+    .svg__main__wrapper svg {
+        width: auto;
+    }
+
 
 }
 
