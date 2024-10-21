@@ -543,6 +543,42 @@ nav.single-block ul li button.active{
     width: 1920px;
 }
 
+
+.use_hover ~ defs g use {
+    transition: fill .5s ease-in-out;
+}
+
+
+
+.use_hover[href='#g_05']:hover ~ defs g#g_05 use,
+.use_hover[href='#g_06']:hover ~ defs g#g_06 use,
+.use_hover[href='#g_07']:hover ~ defs g#g_07 use,
+.use_hover[href='#g_08']:hover ~ defs g#g_08 use,
+.use_hover[href='#g_09']:hover ~ defs g#g_09 use,
+.use_hover[href='#g_10']:hover ~ defs g#g_10 use,
+.use_hover[href='#g_11']:hover ~ defs g#g_11 use,
+.use_hover[href='#g_12']:hover ~ defs g#g_12 use {
+    fill: var(--brown-light);
+}
+
+.use_hover[href='#g_05']:hover ~ defs g#g_05 use.use,
+.use_hover[href='#g_06']:hover ~ defs g#g_06 use.use,
+.use_hover[href='#g_07']:hover ~ defs g#g_07 use.use,
+.use_hover[href='#g_08']:hover ~ defs g#g_08 use.use,
+.use_hover[href='#g_09']:hover ~ defs g#g_09 use.use,
+.use_hover[href='#g_10']:hover ~ defs g#g_10 use.use,
+.use_hover[href='#g_11']:hover ~ defs g#g_11 use.use,
+.use_hover[href='#g_12']:hover ~ defs g#g_12 use.use {
+    fill: var(--biege);
+}
+
+
+
+
+
+
+
+
 .svg__main__wrapper svg g.main-g {
     transition: all .5s ease-in-out;
 }
