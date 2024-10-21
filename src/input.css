@@ -423,6 +423,121 @@
     transition: all 0.2s ease-in-out;
 }
 
+.info__map {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    background-color: var(--biege);
+    padding: 30px;
+    z-index: 1000;
+    max-width: 300px;
+    width: 100%;
+}
+
+.info__map ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+    list-style: none;
+    font-size: 14px;
+    color: #393D46;
+}
+
+#single-block-section {
+    padding: 120px 0;
+}
+
+nav.single-block ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav.single-block ul li{
+    display: flex;
+    gap: 20px;
+}
+
+nav.single-block ul li button{
+    padding: 15px 30px;
+    border: 1px solid var(--biege);
+    border-radius: 50px;
+    color: var(--brown-light);
+    font-weight: 400;
+    font-size: 24px;
+    font-family: 'Bahnschrift';
+    background-color: inherit;
+    transition: all 0.5s ease-in-out;
+}
+
+nav.single-block ul li button.active{
+    padding: 15px 30px;
+    border: 1px solid var(--biege);
+    color: var(--white);
+    background-color: var(--brown-light);
+}
+
+.single-block-checkbox {
+    padding-top: 50px;
+}
+
+.single-block-checkbox {
+    display: flex;
+    gap: 20px;
+}
+
+.single-block-checkbox div label{
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.number__agent {
+    width: 100%;
+    background-color: inherit;
+    margin-bottom: 30px;
+}
+
+.single-apart-title {
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: 'Bahnschrift';
+}
+
+.number__agent input {
+    width: -webkit-fill-available;
+    background-color: inherit;
+    color: #BBA590 !important;
+    padding: 15px 15px;
+    border: 1px solid #BBA590;
+    border-radius: 30px;
+}
+
+.single-apart-list li {
+    display: flex;
+    padding-bottom: 30px;
+    gap: 10px;
+
+}
+
+.single-apart-list li p:first-of-type {
+    color: #BBA590;
+}
+
+.single-apart-list:first-of-type {
+    position: relative;
+}
+
+.single-apart-list:first-of-type::before {
+    position: absolute;
+    top: -20px;
+    content: '';
+    background-color: var(--biege);
+    width: 100%;
+    height: 1px;
+
+}
 
 header {
     position: fixed;
@@ -543,8 +658,21 @@ header {
     #location iframe {
         height: 70vh;
     }
+    #location {
+        padding: 30px 0;
+    }
     .custom__text--contacts {
        height: 66px;
+    }
+    .info__map {
+        padding: 20px;
+        bottom: 0;
+        left: 0;
+        max-width: 100%;
+        width: 100%;
+    }
+    .info__map ul {
+       margin-bottom: 5px;
     }
 
 }
